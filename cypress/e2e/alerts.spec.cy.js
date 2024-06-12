@@ -11,6 +11,28 @@ describe('test alert page', () => {
       cy.get('#confirmResult').should('have.text','You selected Cancel')  
     })
   })
+  describe('test alert page', () => {
+    it('validate alert buttons', () => {
+        Cypress.on('uncaught:exception', (err, runnable) => {
+            return false
+          })
+      cy.visit('https://demoqa.com/alerts', {timeout:120000});
+      cy.get('#alertButton').click();
+        })
+      })
+
+      describe('test alert page', () => {
+        it('validate alert buttons', () => {
+            Cypress.on('uncaught:exception', (err, runnable) => {
+                return false
+              })
+        cy.visit('https://demoqa.com/alerts', {timeout:120000});
+        cy.get('#timerAlertButton').click();
+        cy.wait(500)
+            })
+          })
+      
+
   
 
 
