@@ -1,13 +1,11 @@
 describe('launch application', () => {
-    const validusername= 'username';
-    const validpassword= 'password';
-
     it('launch application', () => {
         launchApplication
-        enterusername(validusername);
-        enterpassword(validpassword);
+        enterusername("");
+        enterpassword("password");
         clickloginbutton("login");
 
+        const validusername= 'username';
 
         function launchApplication(){
         cy.visit('https://demo.applitools.com/');}
