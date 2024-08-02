@@ -23,3 +23,14 @@ Title: Test Case 5
 description: getting back to the home page after checking out.
 Steps: 1. click "back to home" 
 expected results: we should successfuly go back to the website home page after completing our checkout by using the "back to home" button.
+
+File "getname.spec.cy.js"
+description: retrival of booking information. The name John failed. Came to the conclusion it was an API response error (check file for more details)
+
+File "getonename.spc.cy.js"
+description: retrival of booking information. Only one name this time, Michael. The test was successful.
+
+File "healthCheck.spec.cy.js"
+description: checking the health of the website to make sure it exists and is running property. The test was successful.
+
+File "getbooking.spec.cy.js"
